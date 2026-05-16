@@ -882,9 +882,8 @@ These are the available config options for making requests. Only the `url` is re
   redact: ['authorization', 'password'],
 
   // `validateStatus` defines whether to resolve or reject the promise for a given
-  // HTTP response status code. If `validateStatus` returns `true` (or is set to `null`
-  // or `undefined`), the promise will be resolved; otherwise, the promise will be
-  // rejected.
+  // HTTP response status code. If `validateStatus` returns `true` (or is set to `null`),
+  // the promise will be resolved; otherwise, the promise will be rejected.
   validateStatus: function (status) {
     return status >= 200 && status < 300; // default
   },
