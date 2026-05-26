@@ -1,4 +1,4 @@
-<h3 align="center">💎 Platinum sponsors <br /></h3>
+<h3 align="center">Platinum sponsors <br /></h3>
 <table align="center">
     <tr>
         <td align="center" width="50%">
@@ -59,19 +59,19 @@
             <a
                 href="https://opencollective.com/axios/contribute"
                 target="_blank"
-                >💜 Become a sponsor</a
+                >Become a sponsor</a
             >
         </td>
         <td align="center" width="50%">
             <a
                 href="https://opencollective.com/axios/contribute"
                 target="_blank"
-                >💜 Become a sponsor</a
+                >Become a sponsor</a
             >
         </td>
     </tr>
 </table>
-<h3 align="center">🥇 Gold sponsors <br /></h3>
+<h3 align="center">Gold sponsors <br /></h3>
 <table align="center" width="100%">
     <tr width="33.333333333333336%">
         <td align="center" width="33.333333333333336%">
@@ -290,7 +290,7 @@
             <a
                 href="https://opencollective.com/axios/contribute"
                 target="_blank"
-                >💜 Become a sponsor</a
+                >Become a sponsor</a
             >
         </td>
     </tr>
@@ -308,7 +308,7 @@
 <p align="center">Promise based HTTP client for the browser and node.js</p>
 
 <p align="center">
-    <a href="https://axios.rest/"><b>Website</b></a> •
+    <a href="https://axios.rest/"><b>Website</b></a>•
     <a href="https://axios.rest/pages/getting-started/first-steps.html"><b>Documentation</b></a>
 </p>
 
@@ -337,7 +337,7 @@
 - [Example](#example)
 - [Axios API](#axios-api)
 - [Request method aliases](#request-method-aliases)
-- [Concurrency 👎](#concurrency-deprecated)
+- [Concurrency ](#concurrency-deprecated)
 - [Creating an instance](#creating-an-instance)
 - [Instance methods](#instance-methods)
 - [Request Config](#request-config)
@@ -352,24 +352,24 @@
 - [Handling Timeouts](#handling-timeouts)
 - [Cancellation](#cancellation)
   - [AbortController](#abortcontroller)
-  - [CancelToken 👎](#canceltoken-deprecated)
+  - [CancelToken ](#canceltoken-deprecated)
 - [Using application/x-www-form-urlencoded format](#using-applicationx-www-form-urlencoded-format)
   - [URLSearchParams](#urlsearchparams)
   - [Query string](#query-string-older-browsers)
-  - [🆕 Automatic serialization](#-automatic-serialization-to-urlsearchparams)
+  - [ Automatic serialization](#-automatic-serialization-to-urlsearchparams)
 - [Using multipart/form-data format](#using-multipartform-data-format)
   - [FormData](#formdata)
-  - [🆕 Automatic serialization](#-automatic-serialization-to-formdata)
+  - [ Automatic serialization](#-automatic-serialization-to-formdata)
 - [Files Posting](#files-posting)
 - [HTML Form Posting](#-html-form-posting-browser)
-- [🆕 Progress capturing](#-progress-capturing)
-- [🆕 Rate limiting](#-rate-limiting)
-- [🆕 AxiosHeaders](#-axiosheaders)
-- [🔥 Fetch adapter](#-fetch-adapter)
-  - [🔥 Custom fetch](#-custom-fetch)
-    - [🔥 Using with Tauri](#-using-with-tauri)
-    - [🔥 Using with SvelteKit](#-using-with-sveltekit)
-- [🔥 HTTP2](#-http2)
+- [ Progress capturing](#-progress-capturing)
+- [ Rate limiting](#-rate-limiting)
+- [ AxiosHeaders](#-axiosheaders)
+- [ Fetch adapter](#-fetch-adapter)
+  - [ Custom fetch](#-custom-fetch)
+    - [ Using with Tauri](#-using-with-tauri)
+    - [ Using with SvelteKit](#-using-with-sveltekit)
+- [ HTTP2](#-http2)
 - [Semver](#semver)
 - [Promises](#promises)
 - [TypeScript](#typescript)
@@ -388,7 +388,7 @@
 - **Data Transformation:** Transform request and response data automatically.
 - **Request Cancellation:** Cancel requests using built-in mechanisms.
 - **Automatic JSON Handling:** Automatically serializes and parses [JSON](https://www.json.org/json-en.html) data.
-- **Form Serialization:** 🆕 Automatically serializes data objects to `multipart/form-data` or `x-www-form-urlencoded` formats.
+- **Form Serialization:**  Automatically serializes data objects to `multipart/form-data` or `x-www-form-urlencoded` formats.
 - **XSRF Protection:** Client-side support to protect against [Cross-Site Request Forgery](https://en.wikipedia.org/wiki/Cross-site_request_forgery).
 
 ## Browser Support
@@ -396,7 +396,7 @@
 |                                                     Chrome                                                     |                                                      Firefox                                                      |                                                     Safari                                                     |                                                    Opera                                                    |                                                   Edge                                                   |
 | :------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------: |
 | ![Chrome browser logo](https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome/chrome_48x48.png) | ![Firefox browser logo](https://raw.githubusercontent.com/alrra/browser-logos/main/src/firefox/firefox_48x48.png) | ![Safari browser logo](https://raw.githubusercontent.com/alrra/browser-logos/main/src/safari/safari_48x48.png) | ![Opera browser logo](https://raw.githubusercontent.com/alrra/browser-logos/main/src/opera/opera_48x48.png) | ![Edge browser logo](https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge/edge_48x48.png) |
-|                                                    Latest ✔                                                    |                                                     Latest ✔                                                      |                                                    Latest ✔                                                    |                                                  Latest ✔                                                   |                                                 Latest ✔                                                 |
+|                                                    Latest                                                     |                                                     Latest                                                       |                                                    Latest                                                     |                                                  Latest                                                    |                                                 Latest                                                  |
 
 [![Browser Matrix](https://saucelabs.com/open_sauce/build_matrix/axios.svg)](https://saucelabs.com/u/axios)
 
@@ -497,7 +497,7 @@ axios
     params: {
       ID: 12345,
     },
-    timeout: 5000, // 5 seconds — see "Handling Timeouts" below for matching error handling
+    timeout: 5000, // 5 seconds - see "Handling Timeouts" below for matching error handling
   })
   .then(function (response) {
     console.log(response);
@@ -528,11 +528,11 @@ console.log(response);
 }
 ```
 
-> **Note**: Set a `timeout` in production — without one, a stalled request can hang
-> indefinitely. See [Handling Timeouts](#handling-timeouts) for the matching error handling.
+>**Note**: Set a `timeout` in production - without one, a stalled request can hang
+>indefinitely. See [Handling Timeouts](#handling-timeouts) for the matching error handling.
 
-> **Note**: `async/await` is part of ECMAScript 2017 and is not supported in Internet
-> Explorer and older browsers, so use with caution.
+>**Note**: `async/await` is part of ECMAScript 2017 and is not supported in Internet
+>Explorer and older browsers, so use with caution.
 
 Performing a `POST` request
 
@@ -667,7 +667,7 @@ The available instance methods are listed below. The specified config will be me
 
 ## Request Config
 
-### ⚠️ Security notice: decompression-bomb protection is opt-in
+###  Security notice: decompression-bomb protection is opt-in
 
 By default `maxContentLength` and `maxBodyLength` are `-1` (unlimited). A malicious or compromised server can return a tiny gzip/deflate/brotli body that expands to gigabytes and exhaust the Node.js process.
 
@@ -753,7 +753,7 @@ These are the available config options for making requests. Only the `url` is re
   paramsSerializer: {
 
     // Custom encoder function which sends key/value pairs in an iterative fashion.
-    encode?: (param: string): string => { /* Do custom operations here and return transformed string */ },
+    encode?: (param: string): string =>{ /* Do custom operations here and return transformed string */ },
 
     // Custom serializer function for the entire parameter. Allows the user to mimic pre 1.x behaviour.
     serialize?: (params: Record<string, any>, options?: ParamsSerializerOptions ),
@@ -839,7 +839,7 @@ These are the available config options for making requests. Only the `url` is re
   // `true` - always set XSRF header, including for cross-origin requests
   // `false` - never set XSRF header
   // function - resolve with custom logic; receives the internal config object
-  withXSRFToken: boolean | undefined | ((config: InternalAxiosRequestConfig) => boolean | undefined),
+  withXSRFToken: boolean | undefined | ((config: InternalAxiosRequestConfig) =>boolean | undefined),
 
   // `withXSRFToken` controls whether Axios reads the XSRF cookie and sets the XSRF header.
   // - `undefined` (default): the XSRF header is set only for same-origin requests.
@@ -898,7 +898,7 @@ These are the available config options for making requests. Only the `url` is re
   // or to cancel the request by throwing an error
   // If maxRedirects is set to 0, `beforeRedirect` is not used.
 
-  beforeRedirect: (options, { headers }) => {
+  beforeRedirect: (options, { headers }) =>{
     if (
       options.hostname === "example.com" &&
       options.protocol === "https:"
@@ -970,7 +970,7 @@ These are the available config options for making requests. Only the `url` is re
   // If the proxy server uses HTTPS, then you must set the protocol to `https`.
   // A user-supplied `Host` header in `headers` is preserved when forwarding
   // through a proxy (case-insensitive match on `host`/`Host`/`HOST`); this
-  // lets you target a virtual host that differs from the request URL — for
+  // lets you target a virtual host that differs from the request URL - for
   // example, hitting `127.0.0.1:4000` while having the proxy treat the
   // request as `example.com`. If no `Host` header is supplied, axios
   // defaults it to the request URL's `hostname:port` as before. The Host
@@ -1038,7 +1038,7 @@ These are the available config options for making requests. Only the `url` is re
   },
 
   formSerializer: {
-      visitor: (value, key, path, helpers) => {}; // custom visitor function to serialize form values
+      visitor: (value, key, path, helpers) =>{}; // custom visitor function to serialize form values
       dots: boolean; // use dots instead of brackets format
       metaTokens: boolean; // keep special endings like {} in parameter key
       indexes: boolean; // array indexes format null - no brackets, false - empty brackets, true - brackets with indexes
@@ -1072,7 +1072,7 @@ const client = axios.create({
 });
 ```
 
-## 🔥 HTTP/2 Support
+##  HTTP/2 Support
 
 Axios has experimental HTTP/2 support available via the Node.js HTTP adapter.
 
@@ -1276,7 +1276,7 @@ axios.interceptors.request.use(
 );
 ```
 
-> **Note:** The options parameter(having `synchronous` and `runWhen` properties) is only supported for request interceptors at the moment.
+>**Note:** The options parameter(having `synchronous` and `runWhen` properties) is only supported for request interceptors at the moment.
 
 ### Interceptor Execution Order
 
@@ -1291,7 +1291,7 @@ Example:
 ```js
 const instance = axios.create();
 
-const interceptor = (id) => (base) => {
+const interceptor = (id) =>(base) =>{
   console.log(id);
   return base;
 };
@@ -1464,13 +1464,13 @@ axios
 controller.abort();
 ```
 
-### CancelToken `👎deprecated`
+### CancelToken `deprecated`
 
 You can also cancel a request using a _CancelToken_.
 
-> The axios cancel token API is based on the withdrawn [cancellable promises proposal](https://github.com/tc39/proposal-cancelable-promises).
+>The axios cancel token API is based on the withdrawn [cancellable promises proposal](https://github.com/tc39/proposal-cancelable-promises).
 
-> This API is deprecated since v0.22.0 and shouldn't be used in new projects
+>This API is deprecated since v0.22.0 and shouldn't be used in new projects
 
 You can create a cancel token using the `CancelToken.source` factory as shown below:
 
@@ -1521,10 +1521,10 @@ axios.get('/user/12345', {
 cancel();
 ```
 
-> **Note:** you can cancel several requests with the same cancel token/abort controller.
-> If a cancellation token is already cancelled at the moment of starting an Axios request, then the request is cancelled immediately, without any attempts to make a real request.
+>**Note:** you can cancel several requests with the same cancel token/abort controller.
+>If a cancellation token is already cancelled at the moment of starting an Axios request, then the request is cancelled immediately, without any attempts to make a real request.
 
-> During the transition period, you can use both cancellation APIs, even for the same request:
+>During the transition period, you can use both cancellation APIs, even for the same request:
 
 ## Using `application/x-www-form-urlencoded` format
 
@@ -1574,9 +1574,9 @@ axios.post('https://something.com/', querystring.stringify({ foo: 'bar' }));
 
 You can also use the [`qs`](https://github.com/ljharb/qs) library.
 
-> **Note**: The `qs` library is preferable if you need to stringify nested objects, as the `querystring` method has [known issues](https://github.com/nodejs/node-v0.x-archive/issues/1665) with that use case.
+>**Note**: The `qs` library is preferable if you need to stringify nested objects, as the `querystring` method has [known issues](https://github.com/nodejs/node-v0.x-archive/issues/1665) with that use case.
 
-### 🆕 Automatic serialization to URLSearchParams
+###  Automatic serialization to URLSearchParams
 
 Axios will automatically serialize the data object to urlencoded format if the content-type header is set to "application/x-www-form-urlencoded".
 
@@ -1657,7 +1657,7 @@ axios.post('https://example.com', form);
 
 In node.js, when a `FormData` object provides `getHeaders()`, axios copies all returned headers by default for v1 compatibility. If the `FormData` object is custom or not fully trusted, set `formDataHeaderPolicy: 'content-only'` to copy only `Content-Type` and `Content-Length`, and set any other request headers explicitly with the request `headers` config.
 
-### 🆕 Automatic serialization to FormData
+###  Automatic serialization to FormData
 
 Starting from `v0.27.0`, Axios supports automatic object serialization to a FormData object if the request `Content-Type`
 header is set to `multipart/form-data`.
@@ -1677,7 +1677,7 @@ axios
       },
     }
   )
-  .then(({ data }) => console.log(data));
+  .then(({ data }) =>console.log(data));
 ```
 
 In the `node.js` build, the ([`form-data`](https://github.com/form-data/form-data)) polyfill is used by default.
@@ -1699,7 +1699,7 @@ axios
       },
     }
   )
-  .then(({ data }) => console.log(data));
+  .then(({ data }) =>console.log(data));
 ```
 
 Axios FormData serializer supports some special endings to perform the following operations:
@@ -1707,7 +1707,7 @@ Axios FormData serializer supports some special endings to perform the following
 - `{}` - serialize the value with JSON.stringify
 - `[]` - unwrap the array-like object as separate fields with the same key
 
-> **Note**: unwrap/expand operation will be used by default on arrays and FileList objects
+>**Note**: unwrap/expand operation will be used by default on arrays and FileList objects
 
 FormData serializer supports additional options via `config.formSerializer: object` property to handle rare cases:
 
@@ -1799,7 +1799,7 @@ await axios.postForm('https://httpbin.org/post', document.querySelector('#fileIn
 
 All files will be sent with the same field names: `files[]`.
 
-## 🆕 HTML Form Posting (browser)
+##  HTML Form Posting (browser)
 
 Pass an HTML Form element as a payload to submit it as `multipart/form-data` content.
 
@@ -1859,7 +1859,7 @@ will be submitted as the following JSON object:
 
 Sending `Blobs`/`Files` as JSON (`base64`) is not currently supported.
 
-## 🆕 Progress capturing
+##  Progress capturing
 
 Axios supports both browser and node environments to capture request upload/download progress.
 The frequency of progress events is forced to be limited to `3` times per second.
@@ -1896,7 +1896,7 @@ You can also track stream upload/download progress in node.js:
 
 ```js
 const { data } = await axios.post(SERVER_URL, readableStream, {
-  onUploadProgress: ({ progress }) => {
+  onUploadProgress: ({ progress }) =>{
     console.log((progress * 100).toFixed(2));
   },
 
@@ -1908,20 +1908,20 @@ const { data } = await axios.post(SERVER_URL, readableStream, {
 });
 ```
 
-> **Note:**
-> Capturing FormData upload progress is not currently supported in node.js environments.
+>**Note:**
+>Capturing FormData upload progress is not currently supported in node.js environments.
 
-> **⚠️ Warning**
-> It is recommended to disable redirects by setting maxRedirects: 0 to upload the stream in the **node.js** environment,
-> as the follow-redirects package will buffer the entire stream in RAM without following the "backpressure" algorithm.
+>** Warning**
+>It is recommended to disable redirects by setting maxRedirects: 0 to upload the stream in the **node.js** environment,
+>as the follow-redirects package will buffer the entire stream in RAM without following the "backpressure" algorithm.
 
-## 🆕 Rate limiting
+##  Rate limiting
 
 Download and upload rate limits can only be set for the http adapter (node.js):
 
 ```js
 const { data } = await axios.post(LOCAL_SERVER_URL, myBuffer, {
-  onUploadProgress: ({ progress, rate }) => {
+  onUploadProgress: ({ progress, rate }) =>{
     console.log(`Upload [${(progress * 100).toFixed(2)}%]: ${(rate / 1024).toFixed(2)}KB/s`);
   },
 
@@ -1929,7 +1929,7 @@ const { data } = await axios.post(LOCAL_SERVER_URL, myBuffer, {
 });
 ```
 
-## 🆕 AxiosHeaders
+##  AxiosHeaders
 
 Axios has its own `AxiosHeaders` class to manipulate headers using a Map-like API that guarantees caseless work.
 Although HTTP is case-insensitive in headers, Axios will retain the case of the original header for stylistic reasons
@@ -1941,7 +1941,7 @@ The old approach of directly manipulating the headers object is still available,
 An AxiosHeaders object instance can contain different types of internal values. that control setting and merging logic.
 The final headers object with string values is obtained by Axios by calling the `toJSON` method.
 
-> Note: By JSON here we mean an object consisting only of string values intended to be sent over the network.
+>Note: By JSON here we mean an object consisting only of string values intended to be sent over the network.
 
 The header value can be one of the following types:
 
@@ -1951,12 +1951,12 @@ The header value can be one of the following types:
   to overwrite this value (Axios uses this internally to allow users to opt out of installing certain headers like `User-Agent` or `Content-Type`)
 - `undefined` - value is not set
 
-> Note: The header value is considered set if it is not equal to undefined.
+>Note: The header value is considered set if it is not equal to undefined.
 
 The headers object is always initialized inside interceptors and transformers:
 
 ```ts
-axios.interceptors.request.use((request: InternalAxiosRequestConfig) => {
+axios.interceptors.request.use((request: InternalAxiosRequestConfig) =>{
   request.headers.set('My-header', 'value');
 
   request.headers.set({
@@ -2053,7 +2053,7 @@ console.log(headers);
 
 ```ts
 set(headerName, value: Axios, rewrite?: boolean);
-set(headerName, value, rewrite?: (this: AxiosHeaders, value: string, name: string, headers: RawAxiosHeaders) => boolean);
+set(headerName, value, rewrite?: (this: AxiosHeaders, value: string, name: string, headers: RawAxiosHeaders) =>boolean);
 set(headers?: RawAxiosHeaders | AxiosHeaders | string, rewrite?: boolean);
 ```
 
@@ -2092,7 +2092,7 @@ console.log(headers.get('Content-Type', true)); // parse key-value pairs from a 
 // }
 
 console.log(
-  headers.get('Content-Type', (value, name, headers) => {
+  headers.get('Content-Type', (value, name, headers) =>{
     return String(value).replace(/a/g, 'ZZZ');
   })
 );
@@ -2148,7 +2148,7 @@ Returns `true` if at least one header has been cleared.
 If the headers object was changed directly, it can have duplicates with the same name but in different cases.
 This method normalizes the headers object by combining duplicate keys into one.
 Axios uses this method internally after calling each interceptor.
-Set `format` to true for converting header names to lowercase and capitalizing the initial letters (`cOntEnt-type` => `Content-Type`)
+Set `format` to true for converting header names to lowercase and capitalizing the initial letters (`cOntEnt-type` =>`Content-Type`)
 
 ```js
 const headers = new AxiosHeaders({
@@ -2215,7 +2215,7 @@ The following shortcuts are available:
 
 - `setContentEncoding`, `getContentEncoding`, `hasContentEncoding`
 
-## 🔥 Fetch adapter
+##  Fetch adapter
 
 Fetch adapter was introduced in `v1.7.0`. By default, it will be used if `xhr` and `http` adapters are not available in the build,
 or not supported by the environment.
@@ -2240,7 +2240,7 @@ const { data } = fetchAxios.get(url);
 The adapter supports the same functionality as the `xhr` adapter, **including upload and download progress capturing**.
 Also, it supports additional response types such as `stream` and `formdata` (if supported by the environment).
 
-### 🔥 Custom fetch
+###  Custom fetch
 
 Starting from `v1.12.0`, you can customize the fetch adapter to use a custom fetch API instead of environment globals.
 You can pass a custom `fetch` function, `Request`, and `Response` constructors via env config.
@@ -2250,7 +2250,7 @@ Also, when using a custom fetch, you may need to set custom Request and Response
 If your custom fetch api does not have these objects, and the globals are incompatible with a custom fetch,
 you must disable their use inside the fetch adapter by passing null.
 
-> Note: Setting `Request` & `Response` to `null` will make it impossible for the fetch adapter to capture the upload & download progress.
+>Note: Setting `Request` & `Response` to `null` will make it impossible for the fetch adapter to capture the upload & download progress.
 
 Basic example:
 
@@ -2264,13 +2264,13 @@ const instance = axios.create({
   },
   env: {
     fetch: customFetchFunction,
-    Request: null, // undefined -> use the global constructor
+    Request: null, // undefined ->use the global constructor
     Response: null,
   },
 });
 ```
 
-#### 🔥 Using with Tauri
+####  Using with Tauri
 
 A minimal example of setting up Axios for use in a [Tauri](https://tauri.app/plugin/http-client/) app with a platform fetch function that ignores CORS policy for requests.
 
@@ -2291,7 +2291,7 @@ const instance = axios.create({
 const { data } = await instance.get('https://google.com');
 ```
 
-#### 🔥 Using with SvelteKit
+####  Using with SvelteKit
 
 [SvelteKit](https://svelte.dev/docs/kit/web-standards#Fetch-APIs) framework has a custom implementation of the fetch function for server rendering (so called `load` functions), and also uses relative paths,
 which makes it incompatible with the standard URL API. So, Axios must be configured to use the custom fetch API:
@@ -2380,7 +2380,7 @@ const apiClient: AxiosInstance = axios.create({
   timeout: 10000,
 });
 
-apiClient.interceptors.request.use((config: InternalAxiosRequestConfig) => {
+apiClient.interceptors.request.use((config: InternalAxiosRequestConfig) =>{
   // Add auth token
   return config;
 });
@@ -2407,7 +2407,7 @@ npm rebuild husky && npx husky
 
 Run those two commands once per fresh checkout. You do **not** need to re-run them after every subsequent `npm install`.
 
-Do not remove `ignore-scripts=true` from `.npmrc` to "fix" this — that re-opens the lifecycle-script attack surface for every other package in the tree. All CI workflows already invoke npm with `--ignore-scripts`, so local behaviour matches CI.
+Do not remove `ignore-scripts=true` from `.npmrc` to "fix" this - that re-opens the lifecycle-script attack surface for every other package in the tree. All CI workflows already invoke npm with `--ignore-scripts`, so local behaviour matches CI.
 
 ## Resources
 

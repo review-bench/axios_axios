@@ -34,7 +34,7 @@ const options = {
 axios(options);
 ```
 
-En versiones muy antiguas de Node.js, puedes usar el módulo integrado `querystring` que viene con Node.js. Ten en cuenta que este módulo fue marcado como obsoleto en Node.js v16 — prefiere `URLSearchParams` o `qs` para código nuevo.
+En versiones muy antiguas de Node.js, puedes usar el módulo integrado `querystring` que viene con Node.js. Ten en cuenta que este módulo fue marcado como obsoleto en Node.js v16 - prefiere `URLSearchParams` o `qs` para código nuevo.
 
 ```js
 const querystring = require('querystring');

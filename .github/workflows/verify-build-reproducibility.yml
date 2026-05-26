@@ -62,7 +62,7 @@ jobs:
           echo "--- pass 2 hashes (path-normalised) ---"
           cat pass2.sha256
           if ! diff -u pass1.sha256 pass2.sha256; then
-            echo "::warning::Build is not reproducible — dist/ differs between passes."
+            echo "::warning::Build is not reproducible - dist/ differs between passes."
             echo "This does not fail the job (continue-on-error: true) but is visible in the run summary."
             echo "See THREATMODEL.md §T-S5 for context."
             exit 1

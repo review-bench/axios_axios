@@ -34,7 +34,7 @@ const response = await axios.get("https://api.example.com/data", {
 ```
 
 ::: tip
-Para tokens Bearer y claves de API, usa un encabezado `Authorization` personalizado en lugar de la opción `auth` — `auth` es solo para HTTP Basic.
+Para tokens Bearer y claves de API, usa un encabezado `Authorization` personalizado en lugar de la opción `auth` - `auth` es solo para HTTP Basic.
 :::
 
 ## Claves de API

@@ -63,7 +63,7 @@ axios
 
 ## Politique d'en-têtes pour `FormData` Node.js <Badge type="warning" text="Node.js uniquement" />
 
-Lorsque vous passez un objet `FormData` Node.js qui expose `getHeaders()` (comme le package [`form-data`](https://github.com/form-data/form-data)), axios copie par défaut tous les en-têtes qu'il retourne sur la requête. Cela préserve la compatibilité v1 mais peut être problématique lorsque l'objet `FormData` provient d'une source non fiable — `getHeaders()` pourrait écraser des en-têtes comme `Authorization` ou en injecter des arbitraires.
+Lorsque vous passez un objet `FormData` Node.js qui expose `getHeaders()` (comme le package [`form-data`](https://github.com/form-data/form-data)), axios copie par défaut tous les en-têtes qu'il retourne sur la requête. Cela préserve la compatibilité v1 mais peut être problématique lorsque l'objet `FormData` provient d'une source non fiable - `getHeaders()` pourrait écraser des en-têtes comme `Authorization` ou en injecter des arbitraires.
 
 Définissez `formDataHeaderPolicy: 'content-only'` pour copier **uniquement** `Content-Type` et `Content-Length` depuis `getHeaders()`, puis définissez tout autre en-tête explicitement via la configuration `headers` de la requête :
 

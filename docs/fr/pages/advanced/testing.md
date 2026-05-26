@@ -140,6 +140,6 @@ describe("auth interceptor", () => {
 
 ## Conseils
 
-- Simulez toujours au niveau du module (ou utilisez `MockAdapter`) — évitez de simuler des méthodes individuelles sur une instance partagée, car l'état peut fuiter entre les tests.
+- Simulez toujours au niveau du module (ou utilisez `MockAdapter`) - évitez de simuler des méthodes individuelles sur une instance partagée, car l'état peut fuiter entre les tests.
 - Préférez `mockResolvedValueOnce` / `mockRejectedValueOnce` à `mockResolvedValue` pour que les tests soient isolés et ne s'affectent pas mutuellement.
 - Pour tester la logique de nouvelle tentative, utilisez `MockAdapter` afin que l'intercepteur testé s'exécute réellement à chaque tentative.

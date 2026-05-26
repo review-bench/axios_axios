@@ -4,7 +4,7 @@ axios 让文件上传变得简单。需要 `multipart/form-data` 上传时，使
 
 ## 单文件上传（浏览器）
 
-直接将 `File` 对象作为字段值传入——axios 会自动检测并使用正确的内容类型：
+直接将 `File` 对象作为字段值传入--axios 会自动检测并使用正确的内容类型：
 
 ```js
 await axios.postForm("https://httpbin.org/post", {

@@ -4,7 +4,7 @@ axios simplifie l'envoi de fichiers. Utilisez `postForm` ou `FormData` lorsque v
 
 ## Fichier unique (navigateur)
 
-Passez un objet `File` directement comme valeur de champ — axios le détectera et utilisera automatiquement le type de contenu correct :
+Passez un objet `File` directement comme valeur de champ - axios le détectera et utilisera automatiquement le type de contenu correct :
 
 ```js
 await axios.postForm("https://httpbin.org/post", {

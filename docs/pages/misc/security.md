@@ -61,7 +61,7 @@ Consumers can verify provenance locally:
 npm audit signatures
 ```
 
-A successful verification proves the tarball was built in `axios/axios`' GitHub Actions environment on a known commit — it was not tampered with between build and registry. It does **not** prove the code in that commit is free of bugs.
+A successful verification proves the tarball was built in `axios/axios`' GitHub Actions environment on a known commit - it was not tampered with between build and registry. It does **not** prove the code in that commit is free of bugs.
 
 If `npm audit signatures` reports a missing or invalid attestation for a recent `axios` version, treat it as a potential supply-chain incident and report via the private channel below.
 
@@ -81,7 +81,7 @@ When we receive a security vulnerability report, we assign it a primary handler.
 
 We commit to **resolving and publicly disclosing every valid security advisory within 60 calendar days of the initial report**, measured from the moment a report is received via the [GitHub security advisory channel](https://github.com/axios/axios/security/advisories/new).
 
-The 60-day clock is a commitment to reporters and downstream consumers — a backstop, not an aspiration. If we cannot ship a fix in time, we still publish the advisory at day 60 with the best available mitigation guidance so consumers can act.
+The 60-day clock is a commitment to reporters and downstream consumers - a backstop, not an aspiration. If we cannot ship a fix in time, we still publish the advisory at day 60 with the best available mitigation guidance so consumers can act.
 
 **Milestones inside the 60-day window:**
 
@@ -102,7 +102,7 @@ The 60-day clock is a commitment to reporters and downstream consumers — a bac
 
 **Reporter expectations.**
 
-While a report is under embargo, we ask reporters to refrain from public disclosure until the earlier of: (a) the coordinated advisory publication, or (b) day 60. If the 60-day deadline passes without action from us, reporters are free to disclose independently — we will treat that as a failure on our part, not on theirs.
+While a report is under embargo, we ask reporters to refrain from public disclosure until the earlier of: (a) the coordinated advisory publication, or (b) day 60. If the 60-day deadline passes without action from us, reporters are free to disclose independently - we will treat that as a failure on our part, not on theirs.
 
 ## Security Updates
 

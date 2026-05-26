@@ -6,7 +6,7 @@ This is a list of axios related libraries and resources. If you have a suggestio
 
 ### General
 
-- [axios-vcr](https://github.com/nettofarah/axios-vcr) - 📼 Record and Replay Axios requests
+- [axios-vcr](https://github.com/nettofarah/axios-vcr) -  Record and Replay Axios requests
 - [@3846masa/axios-cookiejar-support](https://github.com/3846masa/axios-cookiejar-support) - Add tough-cookie support to axios
 - [axios-method-override](https://github.com/jacobbuck/axios-method-override) - Axios http request method override plugin
 - [axios-cache-plugin](https://github.com/jin5354/axios-cache-plugin) - Help you cache GET requests when using axios.
@@ -34,7 +34,7 @@ This is a list of axios related libraries and resources. If you have a suggestio
 
 ### React and redux
 
-- [axios-hooks](https://github.com/simoneb/axios-hooks) - 🦆 React hooks for axios, with built-in support for server side rendering
+- [axios-hooks](https://github.com/simoneb/axios-hooks) -  React hooks for axios, with built-in support for server side rendering
 - [react-hooks-axios](https://github.com/use-hooks/react-hooks-axios) - Custom React Hooks for Axios.js
 - [redux-saga-requests](https://github.com/klis87/redux-saga-requests) - Redux-Saga addon to simplify handling of AJAX requests.
 - [redux-axios-middleware](https://github.com/svrcekmichal/redux-axios-middleware) - Redux middleware for fetching data with axios HTTP client
@@ -43,7 +43,7 @@ This is a list of axios related libraries and resources. If you have a suggestio
 ### Unit testing
 
 - [axiosist](https://github.com/Gerhut/axiosist) - Axios based supertest: convert node.js request handler to axios adapter, used for node.js server unit test.
-- [axios-mock-adapter](https://github.com/ctimmerm/axios-mock-adapter) — Axios adapter that allows for easily mocking requests
-- [axios-test-instance](https://github.com/remcohaszing/axios-test-instance) — Test NodeJS backends using Axios
+- [axios-mock-adapter](https://github.com/ctimmerm/axios-mock-adapter) - Axios adapter that allows for easily mocking requests
+- [axios-test-instance](https://github.com/remcohaszing/axios-test-instance) - Test NodeJS backends using Axios
 - [moxios](https://github.com/axios/moxios) - Mock axios requests for testing
 - [mocha-axios](https://github.com/jdrydn/mocha-axios) - Streamlined integration testing with Mocha & Axios

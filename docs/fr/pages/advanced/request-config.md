@@ -206,10 +206,10 @@ Le `xsrfHeaderName` est le nom de l'en-tête à utiliser comme valeur pour le to
 
 `withXSRFToken` contrôle si axios lit le cookie XSRF et définit l'en-tête XSRF sur les requêtes du navigateur. Accepte :
 
-- `undefined` _(par défaut)_ — définit l'en-tête XSRF uniquement pour les requêtes du même site (same-origin).
-- `true` — définit toujours l'en-tête XSRF, y compris pour les requêtes cross-origin.
-- `false` — ne définit jamais l'en-tête XSRF.
-- `(config: InternalAxiosRequestConfig) => boolean | undefined` — un callback qui décide par requête, en recevant l'objet de configuration interne.
+- `undefined` _(par défaut)_ - définit l'en-tête XSRF uniquement pour les requêtes du même site (same-origin).
+- `true` - définit toujours l'en-tête XSRF, y compris pour les requêtes cross-origin.
+- `false` - ne définit jamais l'en-tête XSRF.
+- `(config: InternalAxiosRequestConfig) => boolean | undefined` - un callback qui décide par requête, en recevant l'objet de configuration interne.
 
 ```ts
 withXSRFToken: boolean | undefined | ((config: InternalAxiosRequestConfig) => boolean | undefined);
@@ -305,7 +305,7 @@ const client = axios.create({
 // autorisé
 await client.get('http://localhost/v1.45/info', { socketPath: '/var/run/docker.sock' });
 
-// rejeté — pas dans la liste
+// rejeté - pas dans la liste
 await client.get('http://localhost/pods', { socketPath: '/var/run/kubelet.sock' });
 ```
 
@@ -327,7 +327,7 @@ Si vous utilisez des variables d'environnement pour la configuration de votre pr
 
 Utilisez `false` pour désactiver les proxies, en ignorant les variables d'environnement. `auth` indique que l'authentification HTTP Basic doit être utilisée pour se connecter au proxy, et fournit les identifiants. Cela définira un en-tête `Proxy-Authorization`, en écrasant tout en-tête `Proxy-Authorization` personnalisé que vous auriez défini via `headers`. Si le serveur proxy utilise HTTPS, vous devez définir le protocole à `https`.
 
-Un en-tête `Host` fourni par l'utilisateur dans `headers` est préservé lorsqu'il est transféré via un proxy (correspondance insensible à la casse sur `host` / `Host` / `HOST`). Cela vous permet de cibler un hôte virtuel différent de l'URL de la requête — par exemple, atteindre `127.0.0.1:4000` tout en faisant traiter la requête par le proxy comme provenant de `example.com`. Si aucun en-tête `Host` n'est fourni, axios utilise par défaut le `hostname:port` de l'URL de la requête comme auparavant.
+Un en-tête `Host` fourni par l'utilisateur dans `headers` est préservé lorsqu'il est transféré via un proxy (correspondance insensible à la casse sur `host` / `Host` / `HOST`). Cela vous permet de cibler un hôte virtuel différent de l'URL de la requête - par exemple, atteindre `127.0.0.1:4000` tout en faisant traiter la requête par le proxy comme provenant de `example.com`. Si aucun en-tête `Host` n'est fourni, axios utilise par défaut le `hostname:port` de l'URL de la requête comme auparavant.
 
 ```js
 proxy: {
@@ -388,11 +388,11 @@ La propriété `env` vous permet de définir certaines options de configuration.
 
 L'option `formSerializer` vous permet de configurer comment les objets simples sont sérialisés en `multipart/form-data` lorsqu'ils sont utilisés comme `data` de requête. Options disponibles :
 
-- `visitor` — fonction visiteur personnalisée appelée récursivement pour chaque valeur
-- `dots` — utiliser la notation pointée au lieu de la notation entre crochets
-- `metaTokens` — conserver les terminaisons spéciales de clé telles que `{}`
-- `indexes` — contrôler le format des crochets pour les clés de tableau (`null` / `false` / `true`)
-- `maxDepth` _(par défaut : `100`)_ — profondeur maximale d'imbrication avant de lever une `AxiosError` avec le code `ERR_FORM_DATA_DEPTH_EXCEEDED`. Définir à `Infinity` pour désactiver.
+- `visitor` - fonction visiteur personnalisée appelée récursivement pour chaque valeur
+- `dots` - utiliser la notation pointée au lieu de la notation entre crochets
+- `metaTokens` - conserver les terminaisons spéciales de clé telles que `{}`
+- `indexes` - contrôler le format des crochets pour les clés de tableau (`null` / `false` / `true`)
+- `maxDepth` _(par défaut : `100`)_ - profondeur maximale d'imbrication avant de lever une `AxiosError` avec le code `ERR_FORM_DATA_DEPTH_EXCEEDED`. Définir à `Infinity` pour désactiver.
 
 Consultez la page [multipart/form-data](/pages/advanced/multipart-form-data-format) pour tous les détails, et l'exemple de configuration complète en bas de cette page.
 

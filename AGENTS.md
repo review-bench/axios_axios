@@ -2,7 +2,7 @@
 
 axios is a promise-based HTTP client for the browser and Node.js. The default instance is exported from `lib/axios.js` via `index.js`. Browser builds use the XHR or Fetch adapter; Node uses the HTTP/HTTPS adapter. Platform selection lives in `lib/platform/`.
 
-This file is the canonical contributor guide for both human and AI agents working in this repo. `.github/copilot-instructions.md` is a thin stub that points back here — keep it in sync with the load-bearing safety rules below if you change them.
+This file is the canonical contributor guide for both human and AI agents working in this repo. `.github/copilot-instructions.md` is a thin stub that points back here - keep it in sync with the load-bearing safety rules below if you change them.
 
 ## Setup And Safety
 
@@ -85,7 +85,7 @@ This file is the canonical contributor guide for both human and AI agents workin
 
 - Do not mutate config objects in-place; return new objects from merges/transforms.
 - Do not assume browser- or Node-specific globals exist; capability-check first.
-- Do not use `Function.prototype.bind` directly — use `lib/helpers/bind.js`, which forwards `arguments` via `apply` and is what the rest of the library relies on.
+- Do not use `Function.prototype.bind` directly - use `lib/helpers/bind.js`, which forwards `arguments` via `apply` and is what the rest of the library relies on.
 - Do not throw raw `Error` from library code; use `AxiosError` with an appropriate code (see Error Handling).
 
 ## Tests

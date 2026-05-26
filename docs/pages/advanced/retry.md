@@ -1,6 +1,6 @@
 # Retry and error recovery
 
-Network requests can fail for transient reasons — a server blip, a brief network drop, or a rate-limit response. Implementing a retry strategy in an interceptor lets you handle these failures transparently, without cluttering your application code.
+Network requests can fail for transient reasons - a server blip, a brief network drop, or a rate-limit response. Implementing a retry strategy in an interceptor lets you handle these failures transparently, without cluttering your application code.
 
 ## Basic retry with a response interceptor
 

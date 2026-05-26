@@ -1,6 +1,6 @@
 # Reintentos y recuperación de errores
 
-Las solicitudes de red pueden fallar por razones transitorias — una falla momentánea del servidor, una breve interrupción de la red o una respuesta de límite de tasa. Implementar una estrategia de reintento en un interceptor te permite manejar estos fallos de forma transparente, sin ensuciar el código de tu aplicación.
+Las solicitudes de red pueden fallar por razones transitorias - una falla momentánea del servidor, una breve interrupción de la red o una respuesta de límite de tasa. Implementar una estrategia de reintento en un interceptor te permite manejar estos fallos de forma transparente, sin ensuciar el código de tu aplicación.
 
 ## Reintento básico con un interceptor de respuesta
 

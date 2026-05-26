@@ -34,7 +34,7 @@ const response = await axios.get("https://api.example.com/data", {
 ```
 
 ::: tip
-对于 Bearer 令牌和 API 密钥，请使用自定义 `Authorization` 请求头，而非 `auth` 选项——`auth` 仅适用于 HTTP Basic 认证。
+对于 Bearer 令牌和 API 密钥，请使用自定义 `Authorization` 请求头，而非 `auth` 选项--`auth` 仅适用于 HTTP Basic 认证。
 :::
 
 ## API 密钥

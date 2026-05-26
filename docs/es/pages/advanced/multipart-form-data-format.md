@@ -63,7 +63,7 @@ axios
 
 ## Política de encabezados para `FormData` de Node.js <Badge type="warning" text="Solo en Node.js" />
 
-Cuando pasas un objeto `FormData` de Node.js que expone `getHeaders()` (como el paquete [`form-data`](https://github.com/form-data/form-data)), axios copia por defecto todos los encabezados que devuelve a la solicitud. Esto preserva la compatibilidad con v1, pero puede ser problemático cuando el objeto `FormData` proviene de una fuente no confiable — `getHeaders()` podría sobrescribir encabezados como `Authorization` o inyectar encabezados arbitrarios.
+Cuando pasas un objeto `FormData` de Node.js que expone `getHeaders()` (como el paquete [`form-data`](https://github.com/form-data/form-data)), axios copia por defecto todos los encabezados que devuelve a la solicitud. Esto preserva la compatibilidad con v1, pero puede ser problemático cuando el objeto `FormData` proviene de una fuente no confiable - `getHeaders()` podría sobrescribir encabezados como `Authorization` o inyectar encabezados arbitrarios.
 
 Establece `formDataHeaderPolicy: 'content-only'` para copiar **únicamente** `Content-Type` y `Content-Length` desde `getHeaders()`, y luego define cualquier otro encabezado explícitamente a través de la configuración `headers` de la solicitud:
 

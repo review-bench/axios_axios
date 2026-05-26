@@ -4,7 +4,7 @@ axios makes file uploads straightforward. Use `postForm` or `FormData` when you 
 
 ## Single file (browser)
 
-Pass a `File` object directly as a field value — axios will detect it and use the correct content type automatically:
+Pass a `File` object directly as a field value - axios will detect it and use the correct content type automatically:
 
 ```js
 await axios.postForm("https://httpbin.org/post", {

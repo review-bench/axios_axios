@@ -34,7 +34,7 @@ const response = await axios.get("https://api.example.com/data", {
 ```
 
 ::: tip
-For Bearer tokens and API keys, use a custom `Authorization` header rather than the `auth` option — `auth` is only for HTTP Basic.
+For Bearer tokens and API keys, use a custom `Authorization` header rather than the `auth` option - `auth` is only for HTTP Basic.
 :::
 
 ## API keys

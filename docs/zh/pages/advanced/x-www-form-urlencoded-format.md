@@ -34,7 +34,7 @@ const options = {
 axios(options);
 ```
 
-在非常旧的 Node.js 版本中，可以使用 Node.js 内置的 `querystring` 模块。注意该模块在 Node.js v16 中已废弃——新代码请优先使用 `URLSearchParams` 或 `qs`。
+在非常旧的 Node.js 版本中，可以使用 Node.js 内置的 `querystring` 模块。注意该模块在 Node.js v16 中已废弃--新代码请优先使用 `URLSearchParams` 或 `qs`。
 
 ```js
 const querystring = require('querystring');

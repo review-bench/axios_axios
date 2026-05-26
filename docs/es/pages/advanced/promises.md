@@ -1,6 +1,6 @@
 # Promises
 
-axios está construido sobre la API nativa de Promise de ES6. Cada solicitud de axios devuelve una Promise que se resuelve en un objeto de respuesta o se rechaza con un error. Si tu entorno no admite Promises de ES6, necesitarás añadir un polyfill — por ejemplo con [es6-promise](https://github.com/stefanpenner/es6-promise).
+axios está construido sobre la API nativa de Promise de ES6. Cada solicitud de axios devuelve una Promise que se resuelve en un objeto de respuesta o se rechaza con un error. Si tu entorno no admite Promises de ES6, necesitarás añadir un polyfill - por ejemplo con [es6-promise](https://github.com/stefanpenner/es6-promise).
 
 ## then / catch / finally
 

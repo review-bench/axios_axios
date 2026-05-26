@@ -11,7 +11,7 @@
 # Default owner
 *                          @jasonsaayman
 
-# Runtime source — shipped to every consumer
+# Runtime source - shipped to every consumer
 /lib/                      @jasonsaayman
 /index.js                  @jasonsaayman
 /index.d.ts                @jasonsaayman

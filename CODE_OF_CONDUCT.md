@@ -28,10 +28,10 @@ All complaints will be reviewed promptly and treated confidentially.
 
 ## Enforcement Guidelines
 
-1. **Correction** – A private warning and explanation of why the behavior was inappropriate.
-2. **Warning** – A clear warning with consequences for continued behavior.
-3. **Temporary Ban** – A temporary ban for repeated or severe violations.
-4. **Permanent Ban** – A permanent removal for repeated harassment or sustained inappropriate conduct.
+1. **Correction** - A private warning and explanation of why the behavior was inappropriate.
+2. **Warning** - A clear warning with consequences for continued behavior.
+3. **Temporary Ban** - A temporary ban for repeated or severe violations.
+4. **Permanent Ban** - A permanent removal for repeated harassment or sustained inappropriate conduct.
 
 ---
 

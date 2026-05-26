@@ -1,6 +1,6 @@
 # Nouvelles tentatives et récupération sur erreur
 
-Les requêtes réseau peuvent échouer pour des raisons transitoires — une défaillance momentanée du serveur, une brève interruption du réseau, ou une réponse de limitation de débit. Implémenter une stratégie de nouvelle tentative dans un intercepteur vous permet de gérer ces échecs de manière transparente, sans polluer votre code applicatif.
+Les requêtes réseau peuvent échouer pour des raisons transitoires - une défaillance momentanée du serveur, une brève interruption du réseau, ou une réponse de limitation de débit. Implémenter une stratégie de nouvelle tentative dans un intercepteur vous permet de gérer ces échecs de manière transparente, sans polluer votre code applicatif.
 
 ## Nouvelle tentative de base avec un intercepteur de réponse
 

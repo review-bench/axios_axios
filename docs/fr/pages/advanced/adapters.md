@@ -2,7 +2,7 @@
 
 Les adaptateurs vous permettent de personnaliser la façon dont axios gère les données de la requête. Par défaut, axios utilise une liste de priorité ordonnée `['xhr', 'http', 'fetch']` et sélectionne le premier adaptateur pris en charge par l'environnement actuel. En pratique, cela signifie que `xhr` est utilisé dans les navigateurs, `http` dans Node.js, et `fetch` dans les environnements où ni l'un ni l'autre n'est disponible (comme Cloudflare Workers ou Deno).
 
-Écrire votre propre adaptateur vous donne un contrôle total sur la façon dont axios effectue une requête et traite la réponse — utile pour les tests, les transports personnalisés ou les environnements non standard.
+Écrire votre propre adaptateur vous donne un contrôle total sur la façon dont axios effectue une requête et traite la réponse - utile pour les tests, les transports personnalisés ou les environnements non standard.
 
 ## Adaptateurs intégrés
 

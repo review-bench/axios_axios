@@ -140,6 +140,6 @@ describe("auth interceptor", () => {
 
 ## Consejos
 
-- Siempre simula a nivel de módulo (o usa `MockAdapter`) — evita simular métodos individuales en una instancia compartida, ya que el estado puede filtrarse entre pruebas.
+- Siempre simula a nivel de módulo (o usa `MockAdapter`) - evita simular métodos individuales en una instancia compartida, ya que el estado puede filtrarse entre pruebas.
 - Usa `mockResolvedValueOnce` / `mockRejectedValueOnce` en lugar de `mockResolvedValue` para que las pruebas estén aisladas y no se afecten entre sí.
 - Al probar lógica de reintento, usa `MockAdapter` para que el interceptor bajo prueba realmente se ejecute en cada intento.

@@ -206,10 +206,10 @@ The `xsrfHeaderName` is the name of the header to use as a value for `XSRF` toke
 
 `withXSRFToken` controls whether axios reads the XSRF cookie and sets the XSRF header on browser requests. It accepts:
 
-- `undefined` _(default)_ — set the XSRF header only for same-origin requests.
-- `true` — always set the XSRF header, including for cross-origin requests.
-- `false` — never set the XSRF header.
-- `(config: InternalAxiosRequestConfig) => boolean | undefined` — a callback that decides per-request, receiving the internal config object.
+- `undefined` _(default)_ - set the XSRF header only for same-origin requests.
+- `true` - always set the XSRF header, including for cross-origin requests.
+- `false` - never set the XSRF header.
+- `(config: InternalAxiosRequestConfig) => boolean | undefined` - a callback that decides per-request, receiving the internal config object.
 
 ```ts
 withXSRFToken: boolean | undefined | ((config: InternalAxiosRequestConfig) => boolean | undefined);
@@ -290,7 +290,7 @@ The `beforeRedirect` hook runs **after** sensitive headers are stripped during r
 The `socketPath` property defines a UNIX socket to use instead of a TCP connection. e.g. `/var/run/docker.sock` to send requests to the docker daemon. Only `socketPath` or `proxy` can be specified. If both are specified, `socketPath` is used.
 
 :::warning Security
-When `socketPath` is set, the hostname and port of the request URL are ignored and axios communicates directly with the specified Unix domain socket. If any part of the request config is derived from user input (for example, when forwarding or merging request options in a proxy/webhook handler), an attacker can inject `socketPath` to redirect traffic to privileged local sockets such as `/var/run/docker.sock`, `/run/containerd/containerd.sock`, or `/run/systemd/private` — bypassing hostname-based SSRF protections entirely (CWE-918). Strip or allowlist config keys from untrusted input, and/or restrict accepted socket paths with `allowedSocketPaths` (see below).
+When `socketPath` is set, the hostname and port of the request URL are ignored and axios communicates directly with the specified Unix domain socket. If any part of the request config is derived from user input (for example, when forwarding or merging request options in a proxy/webhook handler), an attacker can inject `socketPath` to redirect traffic to privileged local sockets such as `/var/run/docker.sock`, `/run/containerd/containerd.sock`, or `/run/systemd/private` - bypassing hostname-based SSRF protections entirely (CWE-918). Strip or allowlist config keys from untrusted input, and/or restrict accepted socket paths with `allowedSocketPaths` (see below).
 :::
 
 ### `allowedSocketPaths` <Badge type="warning" text="Node.js only" />
@@ -305,7 +305,7 @@ const client = axios.create({
 // allowed
 await client.get('http://localhost/v1.45/info', { socketPath: '/var/run/docker.sock' });
 
-// rejected — not in allowlist
+// rejected - not in allowlist
 await client.get('http://localhost/pods', { socketPath: '/var/run/kubelet.sock' });
 ```
 
@@ -327,7 +327,7 @@ If you are using environment variables for your proxy configuration, you can als
 
 Use `false` to disable proxies, ignoring environment variables. `auth` indicates that HTTP Basic auth should be used to connect to the proxy, and supplies credentials. This will set an `Proxy-Authorization` header, overwriting any existing `Proxy-Authorization` custom headers you have set using `headers`. If the proxy server uses HTTPS, then you must set the protocol to `https`.
 
-A user-supplied `Host` header in `headers` is preserved when forwarding through a proxy (case-insensitive match on `host` / `Host` / `HOST`). This lets you target a virtual host that differs from the request URL — for example, hitting `127.0.0.1:4000` while having the proxy treat the request as `example.com`. If no `Host` header is supplied, axios defaults it to the request URL's `hostname:port` as before.
+A user-supplied `Host` header in `headers` is preserved when forwarding through a proxy (case-insensitive match on `host` / `Host` / `HOST`). This lets you target a virtual host that differs from the request URL - for example, hitting `127.0.0.1:4000` while having the proxy treat the request as `example.com`. If no `Host` header is supplied, axios defaults it to the request URL's `hostname:port` as before.
 
 ```js
 proxy: {
@@ -388,11 +388,11 @@ The `env` property allows you to set some configuration options. For example the
 
 The `formSerializer` option allows you to configure how plain objects are serialized to `multipart/form-data` when used as request `data`. Available options:
 
-- `visitor` — custom visitor function called recursively for each value
-- `dots` — use dot notation instead of bracket notation
-- `metaTokens` — preserve special key endings such as `{}`
-- `indexes` — control bracket format for array keys (`null` / `false` / `true`)
-- `maxDepth` _(default: `100`)_ — maximum nesting depth before throwing `AxiosError` with code `ERR_FORM_DATA_DEPTH_EXCEEDED`. Set to `Infinity` to disable.
+- `visitor` - custom visitor function called recursively for each value
+- `dots` - use dot notation instead of bracket notation
+- `metaTokens` - preserve special key endings such as `{}`
+- `indexes` - control bracket format for array keys (`null` / `false` / `true`)
+- `maxDepth` _(default: `100`)_ - maximum nesting depth before throwing `AxiosError` with code `ERR_FORM_DATA_DEPTH_EXCEEDED`. Set to `Infinity` to disable.
 
 See the [multipart/form-data](/pages/advanced/multipart-form-data-format) page for full details, and the full request config example at the end of this page.
 

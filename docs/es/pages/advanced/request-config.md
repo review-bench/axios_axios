@@ -206,10 +206,10 @@ Nota: Se ignora para `responseType` de tipo `stream` o solicitudes del lado del 
 
 `withXSRFToken` controla si axios lee la cookie XSRF y establece el encabezado XSRF en las solicitudes del navegador. Acepta:
 
-- `undefined` _(predeterminado)_ — establece el encabezado XSRF solo para solicitudes del mismo origen.
-- `true` — siempre establece el encabezado XSRF, incluso para solicitudes de origen cruzado.
-- `false` — nunca establece el encabezado XSRF.
-- `(config: InternalAxiosRequestConfig) => boolean | undefined` — un callback que decide por solicitud, recibiendo el objeto de configuración interna.
+- `undefined` _(predeterminado)_ - establece el encabezado XSRF solo para solicitudes del mismo origen.
+- `true` - siempre establece el encabezado XSRF, incluso para solicitudes de origen cruzado.
+- `false` - nunca establece el encabezado XSRF.
+- `(config: InternalAxiosRequestConfig) => boolean | undefined` - un callback que decide por solicitud, recibiendo el objeto de configuración interna.
 
 ```ts
 withXSRFToken: boolean | undefined | ((config: InternalAxiosRequestConfig) => boolean | undefined);
@@ -305,7 +305,7 @@ const client = axios.create({
 // permitido
 await client.get('http://localhost/v1.45/info', { socketPath: '/var/run/docker.sock' });
 
-// rechazado — no está en la lista
+// rechazado - no está en la lista
 await client.get('http://localhost/pods', { socketPath: '/var/run/kubelet.sock' });
 ```
 
@@ -327,7 +327,7 @@ Si usas variables de entorno para tu configuración de proxy, también puedes de
 
 Usa `false` para deshabilitar los proxies, ignorando las variables de entorno. `auth` indica que se debe usar autenticación HTTP Basic para conectarse al proxy, y proporciona las credenciales. Esto establecerá un encabezado `Proxy-Authorization`, sobrescribiendo cualquier encabezado `Proxy-Authorization` personalizado que hayas definido usando `headers`. Si el servidor proxy usa HTTPS, debes establecer el protocolo en `https`.
 
-Un encabezado `Host` proporcionado por el usuario en `headers` se preserva al reenviar a través de un proxy (coincidencia insensible a mayúsculas en `host` / `Host` / `HOST`). Esto te permite apuntar a un host virtual distinto al de la URL de la solicitud — por ejemplo, llegar a `127.0.0.1:4000` mientras el proxy trata la solicitud como `example.com`. Si no se proporciona ningún encabezado `Host`, axios lo establece por defecto al `hostname:port` de la URL de la solicitud, como antes.
+Un encabezado `Host` proporcionado por el usuario en `headers` se preserva al reenviar a través de un proxy (coincidencia insensible a mayúsculas en `host` / `Host` / `HOST`). Esto te permite apuntar a un host virtual distinto al de la URL de la solicitud - por ejemplo, llegar a `127.0.0.1:4000` mientras el proxy trata la solicitud como `example.com`. Si no se proporciona ningún encabezado `Host`, axios lo establece por defecto al `hostname:port` de la URL de la solicitud, como antes.
 
 ```js
 proxy: {
@@ -388,11 +388,11 @@ La propiedad `env` te permite establecer algunas opciones de configuración. Por
 
 La opción `formSerializer` te permite configurar cómo se serializan los objetos planos a `multipart/form-data` cuando se usan como `data` de solicitud. Opciones disponibles:
 
-- `visitor` — función visitante personalizada llamada recursivamente para cada valor
-- `dots` — usar notación de punto en lugar de notación de corchetes
-- `metaTokens` — preservar terminaciones especiales de clave como `{}`
-- `indexes` — controlar el formato de corchetes para claves de arreglo (`null` / `false` / `true`)
-- `maxDepth` _(predeterminado: `100`)_ — profundidad máxima de anidación antes de lanzar un `AxiosError` con código `ERR_FORM_DATA_DEPTH_EXCEEDED`. Establece en `Infinity` para desactivar.
+- `visitor` - función visitante personalizada llamada recursivamente para cada valor
+- `dots` - usar notación de punto en lugar de notación de corchetes
+- `metaTokens` - preservar terminaciones especiales de clave como `{}`
+- `indexes` - controlar el formato de corchetes para claves de arreglo (`null` / `false` / `true`)
+- `maxDepth` _(predeterminado: `100`)_ - profundidad máxima de anidación antes de lanzar un `AxiosError` con código `ERR_FORM_DATA_DEPTH_EXCEEDED`. Establece en `Infinity` para desactivar.
 
 Consulta la página [multipart/form-data](/pages/advanced/multipart-form-data-format) para todos los detalles, y el ejemplo completo de configuración de solicitud al final de esta página.
 

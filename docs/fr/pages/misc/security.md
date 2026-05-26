@@ -61,7 +61,7 @@ Les consommateurs peuvent vérifier la provenance localement :
 npm audit signatures
 ```
 
-Une vérification réussie prouve que le tarball a été construit dans l'environnement GitHub Actions de `axios/axios` à partir d'un commit connu — il n'a pas été altéré entre la construction et le registre. Elle ne prouve **pas** que le code de ce commit est exempt de bugs.
+Une vérification réussie prouve que le tarball a été construit dans l'environnement GitHub Actions de `axios/axios` à partir d'un commit connu - il n'a pas été altéré entre la construction et le registre. Elle ne prouve **pas** que le code de ce commit est exempt de bugs.
 
 Si `npm audit signatures` signale une attestation manquante ou invalide pour une version récente d'`axios`, traitez-le comme un incident potentiel de chaîne d'approvisionnement et signalez-le via le canal privé ci-dessous.
 
@@ -81,7 +81,7 @@ Lorsque nous recevons un rapport de vulnérabilité, nous lui assignons un respo
 
 Nous nous engageons à **résoudre et divulguer publiquement chaque avis de sécurité valide dans les 60 jours calendaires suivant le rapport initial**, à compter du moment où un rapport est reçu via le [canal des avis de sécurité GitHub](https://github.com/axios/axios/security/advisories/new).
 
-L'horloge des 60 jours est un engagement envers les rapporteurs et les consommateurs en aval — un filet de sécurité, pas un objectif. Si nous ne pouvons pas livrer un correctif à temps, nous publions tout de même l'avis au jour 60 avec les meilleures recommandations d'atténuation disponibles, afin que les consommateurs puissent agir.
+L'horloge des 60 jours est un engagement envers les rapporteurs et les consommateurs en aval - un filet de sécurité, pas un objectif. Si nous ne pouvons pas livrer un correctif à temps, nous publions tout de même l'avis au jour 60 avec les meilleures recommandations d'atténuation disponibles, afin que les consommateurs puissent agir.
 
 **Jalons dans la fenêtre de 60 jours :**
 
@@ -102,7 +102,7 @@ L'horloge des 60 jours est un engagement envers les rapporteurs et les consommat
 
 **Attentes vis-à-vis du rapporteur.**
 
-Pendant qu'un rapport est sous embargo, nous demandons aux rapporteurs de s'abstenir de toute divulgation publique jusqu'à la plus proche de : (a) la publication coordonnée de l'avis, ou (b) le jour 60. Si l'échéance des 60 jours passe sans action de notre part, les rapporteurs sont libres de divulguer indépendamment — nous considérerons cela comme un échec de notre part, pas du leur.
+Pendant qu'un rapport est sous embargo, nous demandons aux rapporteurs de s'abstenir de toute divulgation publique jusqu'à la plus proche de : (a) la publication coordonnée de l'avis, ou (b) le jour 60. Si l'échéance des 60 jours passe sans action de notre part, les rapporteurs sont libres de divulguer indépendamment - nous considérerons cela comme un échec de notre part, pas du leur.
 
 ## Mises à jour de sécurité
 

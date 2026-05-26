@@ -100,9 +100,9 @@ axios.interceptors.request.use(
 ## Ordre d'exécution des intercepteurs
 
 ::: warning Les intercepteurs de requête et de réponse s'exécutent dans des ordres **opposés**
-Les intercepteurs de requête sont exécutés dans l'**ordre inverse** (LIFO — last in, first out). Le _dernier_ intercepteur de requête ajouté est exécuté en _premier_.
+Les intercepteurs de requête sont exécutés dans l'**ordre inverse** (LIFO - last in, first out). Le _dernier_ intercepteur de requête ajouté est exécuté en _premier_.
 
-Les intercepteurs de réponse sont exécutés dans l'**ordre où ils ont été ajoutés** (FIFO — first in, first out). Le _premier_ intercepteur de réponse ajouté est exécuté en _premier_.
+Les intercepteurs de réponse sont exécutés dans l'**ordre où ils ont été ajoutés** (FIFO - first in, first out). Le _premier_ intercepteur de réponse ajouté est exécuté en _premier_.
 :::
 
 L'exemple suivant montre l'ordre d'exécution complet pour trois intercepteurs de requête et trois intercepteurs de réponse :

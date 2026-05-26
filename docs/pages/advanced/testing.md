@@ -140,6 +140,6 @@ describe("auth interceptor", () => {
 
 ## Tips
 
-- Always mock at the module level (or use `MockAdapter`) — avoid mocking individual methods on a shared instance, as state can leak between tests.
+- Always mock at the module level (or use `MockAdapter`) - avoid mocking individual methods on a shared instance, as state can leak between tests.
 - Use `mockResolvedValueOnce` / `mockRejectedValueOnce` in preference to `mockResolvedValue` so that tests are isolated and don't affect one another.
 - When testing retry logic, use `MockAdapter` so that the interceptor under test actually runs on each attempt.

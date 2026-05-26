@@ -167,5 +167,5 @@ await axios.patchForm("/api/users/1", {
 ```
 
 ::: tip
-`postForm`, `putForm`, and `patchForm` accept all the same data types as their base methods — plain objects, `FormData`, `FileList`, and `HTMLFormElement`. See [File posting](/pages/advanced/file-posting) for more examples.
+`postForm`, `putForm`, and `patchForm` accept all the same data types as their base methods - plain objects, `FormData`, `FileList`, and `HTMLFormElement`. See [File posting](/pages/advanced/file-posting) for more examples.
 :::

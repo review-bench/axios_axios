@@ -4,7 +4,7 @@ axios facilita la subida de archivos. Usa `postForm` o `FormData` cuando necesit
 
 ## Archivo único (navegador)
 
-Pasa un objeto `File` directamente como valor de campo — axios lo detectará y usará automáticamente el tipo de contenido correcto:
+Pasa un objeto `File` directamente como valor de campo - axios lo detectará y usará automáticamente el tipo de contenido correcto:
 
 ```js
 await axios.postForm("https://httpbin.org/post", {

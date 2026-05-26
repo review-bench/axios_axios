@@ -206,10 +206,10 @@ const client = axios.create({
 
 `withXSRFToken` 控制 axios 在浏览器请求中是否读取 XSRF cookie 并设置 XSRF 请求头。可选值如下：
 
-- `undefined` _（默认）_ — 仅在同源请求时设置 XSRF 请求头。
-- `true` — 始终设置 XSRF 请求头，包括跨域请求。
-- `false` — 永不设置 XSRF 请求头。
-- `(config: InternalAxiosRequestConfig) => boolean | undefined` — 回调函数，按请求决定是否设置，会接收内部 config 对象。
+- `undefined` _（默认）_ - 仅在同源请求时设置 XSRF 请求头。
+- `true` - 始终设置 XSRF 请求头，包括跨域请求。
+- `false` - 永不设置 XSRF 请求头。
+- `(config: InternalAxiosRequestConfig) => boolean | undefined` - 回调函数，按请求决定是否设置，会接收内部 config 对象。
 
 ```ts
 withXSRFToken: boolean | undefined | ((config: InternalAxiosRequestConfig) => boolean | undefined);
@@ -305,7 +305,7 @@ const client = axios.create({
 // 允许
 await client.get('http://localhost/v1.45/info', { socketPath: '/var/run/docker.sock' });
 
-// 拒绝 — 不在白名单中
+// 拒绝 - 不在白名单中
 await client.get('http://localhost/pods', { socketPath: '/var/run/kubelet.sock' });
 ```
 
@@ -327,7 +327,7 @@ await client.get('http://localhost/pods', { socketPath: '/var/run/kubelet.sock' 
 
 设置为 `false` 可禁用代理，忽略环境变量。`auth` 表示使用 HTTP Basic 认证连接代理并提供凭据，这将设置 `Proxy-Authorization` 请求头，覆盖任何通过 `headers` 自定义的 `Proxy-Authorization` 请求头。如果代理服务器使用 HTTPS，则必须将协议设置为 `https`。
 
-通过代理转发时，如果用户在 `headers` 中提供了 `Host` 请求头，axios 会保留它（不区分大小写匹配 `host` / `Host` / `HOST`）。这样你就可以指向一个与请求 URL 不同的虚拟主机——例如，访问 `127.0.0.1:4000`，但让代理将请求当作 `example.com` 处理。如果未提供 `Host` 请求头，axios 仍会像以前一样将其默认设为请求 URL 的 `hostname:port`。
+通过代理转发时，如果用户在 `headers` 中提供了 `Host` 请求头，axios 会保留它（不区分大小写匹配 `host` / `Host` / `HOST`）。这样你就可以指向一个与请求 URL 不同的虚拟主机--例如，访问 `127.0.0.1:4000`，但让代理将请求当作 `example.com` 处理。如果未提供 `Host` 请求头，axios 仍会像以前一样将其默认设为请求 URL 的 `hostname:port`。
 
 ```js
 proxy: {
@@ -388,11 +388,11 @@ proxy: {
 
 `formSerializer` 选项允许你配置普通对象作为请求 `data` 时如何序列化为 `multipart/form-data`。可用选项：
 
-- `visitor` — 对每个值递归调用的自定义访问者函数
-- `dots` — 使用点号表示法代替方括号表示法
-- `metaTokens` — 保留特殊的键后缀（如 `{}`）
-- `indexes` — 控制数组键的方括号格式（`null` / `false` / `true`）
-- `maxDepth` _（默认：`100`）_ — 抛出 `AxiosError`（错误码 `ERR_FORM_DATA_DEPTH_EXCEEDED`）前的最大嵌套深度。设置为 `Infinity` 可禁用。
+- `visitor` - 对每个值递归调用的自定义访问者函数
+- `dots` - 使用点号表示法代替方括号表示法
+- `metaTokens` - 保留特殊的键后缀（如 `{}`）
+- `indexes` - 控制数组键的方括号格式（`null` / `false` / `true`）
+- `maxDepth` _（默认：`100`）_ - 抛出 `AxiosError`（错误码 `ERR_FORM_DATA_DEPTH_EXCEEDED`）前的最大嵌套深度。设置为 `Infinity` 可禁用。
 
 详见 [multipart/form-data](/pages/advanced/multipart-form-data-format) 页面以及本页末尾的完整请求配置示例。
 

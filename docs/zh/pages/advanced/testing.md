@@ -140,6 +140,6 @@ describe("auth interceptor", () => {
 
 ## 最佳实践
 
-- 始终在模块级别进行 mock（或使用 `MockAdapter`）——避免在共享实例的单个方法上进行 mock，因为状态可能在测试之间泄漏。
+- 始终在模块级别进行 mock（或使用 `MockAdapter`）--避免在共享实例的单个方法上进行 mock，因为状态可能在测试之间泄漏。
 - 优先使用 `mockResolvedValueOnce` / `mockRejectedValueOnce`，而不是 `mockResolvedValue`，以确保测试相互隔离，互不影响。
 - 测试重试逻辑时，使用 `MockAdapter`，以便被测拦截器在每次重试时都能真正执行。

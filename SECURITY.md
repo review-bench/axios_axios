@@ -11,9 +11,9 @@ The following versions will receive security updates promptly based on the maint
 
 ## Threat Model
 
-For a detailed analysis of the runtime attack surface and the project's supply-chain / development-environment security posture, see [THREATMODEL.md](THREATMODEL.md). Researchers are encouraged to read it before reporting — it documents what is in scope, what is an explicit non-goal, and where we already know the gaps are.
+For a detailed analysis of the runtime attack surface and the project's supply-chain / development-environment security posture, see [THREATMODEL.md](THREATMODEL.md). Researchers are encouraged to read it before reporting - it documents what is in scope, what is an explicit non-goal, and where we already know the gaps are.
 
-An incident-response runbook (for the maintainer side — session revocation, key rotation, notification) is maintained in [THREATMODEL.md §3.7](THREATMODEL.md#37-incident-response-runbook).
+An incident-response runbook (for the maintainer side - session revocation, key rotation, notification) is maintained in [THREATMODEL.md §3.7](THREATMODEL.md#37-incident-response-runbook).
 
 ## Verifying a Release
 
@@ -26,7 +26,7 @@ Consumers can verify provenance locally:
 npm audit signatures
 ```
 
-A successful verification proves the tarball was built in `axios/axios`' GitHub Actions environment on a known commit — it was not tampered with between build and registry. It does **not** prove the code in that commit is free of bugs.
+A successful verification proves the tarball was built in `axios/axios`' GitHub Actions environment on a known commit - it was not tampered with between build and registry. It does **not** prove the code in that commit is free of bugs.
 
 If `npm audit signatures` reports a missing or invalid attestation for a recent `axios` version, treat it as a potential supply-chain incident and report via the private channel below.
 
@@ -46,7 +46,7 @@ When we receive a security vulnerability report, we assign it a primary handler.
 
 We commit to **resolving and publicly disclosing every valid security advisory within 60 calendar days of the initial report**, measured from the moment a report is received via the [GitHub security advisory channel](https://github.com/axios/axios/security/advisories/new).
 
-The 60-day clock is a commitment to reporters and downstream consumers — a backstop, not an aspiration. If we cannot ship a fix in time, we still publish the advisory at day 60 with the best available mitigation guidance so consumers can act. We then continue to work on the fix and update the advisory with the patch details as soon as possible.
+The 60-day clock is a commitment to reporters and downstream consumers - a backstop, not an aspiration. If we cannot ship a fix in time, we still publish the advisory at day 60 with the best available mitigation guidance so consumers can act. We then continue to work on the fix and update the advisory with the patch details as soon as possible.
 
 We will release the fix separately from the advisory, but we will not delay the advisory beyond day 60. We want to release the fix before we publish the advisory to give users the opportunity to patch before the vulnerability details are public.
 
@@ -59,7 +59,7 @@ We will release the fix separately from the advisory, but we will not delay the 
 
 **Reporter expectations.**
 
-While a report is under embargo, we ask reporters to refrain from public disclosure until the earlier of: (a) the coordinated advisory publication, or (b) day 60. If the 60-day deadline passes without action from us, reporters are free to disclose independently — but we will treat that as a failure on our part, not on theirs.
+While a report is under embargo, we ask reporters to refrain from public disclosure until the earlier of: (a) the coordinated advisory publication, or (b) day 60. If the 60-day deadline passes without action from us, reporters are free to disclose independently - but we will treat that as a failure on our part, not on theirs.
 
 ## Security Updates
 

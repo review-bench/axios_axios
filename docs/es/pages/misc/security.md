@@ -61,7 +61,7 @@ Los consumidores pueden verificar la provenance localmente:
 npm audit signatures
 ```
 
-Una verificación exitosa demuestra que el tarball fue construido en el entorno de GitHub Actions de `axios/axios` sobre un commit conocido — no fue alterado entre la compilación y el registro. **No** demuestra que el código de ese commit esté libre de bugs.
+Una verificación exitosa demuestra que el tarball fue construido en el entorno de GitHub Actions de `axios/axios` sobre un commit conocido - no fue alterado entre la compilación y el registro. **No** demuestra que el código de ese commit esté libre de bugs.
 
 Si `npm audit signatures` reporta una atestación ausente o inválida para una versión reciente de `axios`, trátalo como un posible incidente de cadena de suministro y repórtalo por el canal privado indicado abajo.
 
@@ -81,7 +81,7 @@ Cuando recibimos un reporte de vulnerabilidad, asignamos un responsable principa
 
 Nos comprometemos a **resolver y divulgar públicamente cada aviso de seguridad válido dentro de los 60 días naturales posteriores al reporte inicial**, contados desde el momento en que se recibe el reporte a través del [canal de avisos de seguridad de GitHub](https://github.com/axios/axios/security/advisories/new).
 
-El plazo de 60 días es un compromiso con quienes reportan y con los consumidores aguas abajo — es un mínimo exigible, no una meta. Si no podemos entregar una corrección a tiempo, publicamos de todos modos el aviso el día 60 con la mejor guía de mitigación disponible para que los consumidores puedan actuar.
+El plazo de 60 días es un compromiso con quienes reportan y con los consumidores aguas abajo - es un mínimo exigible, no una meta. Si no podemos entregar una corrección a tiempo, publicamos de todos modos el aviso el día 60 con la mejor guía de mitigación disponible para que los consumidores puedan actuar.
 
 **Hitos dentro de la ventana de 60 días:**
 
@@ -102,7 +102,7 @@ El plazo de 60 días es un compromiso con quienes reportan y con los consumidore
 
 **Expectativas sobre quien reporta.**
 
-Mientras un reporte esté bajo embargo, pedimos que se abstengan de divulgación pública hasta el primero de: (a) la publicación coordinada del aviso, o (b) el día 60. Si la fecha límite de 60 días pasa sin acción de nuestra parte, quien reportó queda libre de divulgar por su cuenta — consideraremos eso un fallo nuestro, no suyo.
+Mientras un reporte esté bajo embargo, pedimos que se abstengan de divulgación pública hasta el primero de: (a) la publicación coordinada del aviso, o (b) el día 60. Si la fecha límite de 60 días pasa sin acción de nuestra parte, quien reportó queda libre de divulgar por su cuenta - consideraremos eso un fallo nuestro, no suyo.
 
 ## Actualizaciones de seguridad
 

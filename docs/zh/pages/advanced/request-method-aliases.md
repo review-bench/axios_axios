@@ -167,5 +167,5 @@ await axios.patchForm("/api/users/1", {
 ```
 
 ::: tip
-`postForm`、`putForm` 和 `patchForm` 接受与基础方法相同的所有数据类型——普通对象、`FormData`、`FileList` 以及 `HTMLFormElement`。更多示例请参阅[文件上传](/pages/advanced/file-posting)。
+`postForm`、`putForm` 和 `patchForm` 接受与基础方法相同的所有数据类型--普通对象、`FormData`、`FileList` 以及 `HTMLFormElement`。更多示例请参阅[文件上传](/pages/advanced/file-posting)。
 :::

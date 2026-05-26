@@ -2,7 +2,7 @@
 Thanks for contributing to axios! A few quick notes:
 - For non-trivial changes, please open an issue first so we can discuss the approach.
 - Follow Conventional Commits in your commit messages (see CONTRIBUTING.md).
-- If you leave the description blank, our AI agent will draft one — feel free to edit afterwards.
+- If you leave the description blank, our AI agent will draft one - feel free to edit afterwards.
 -->
 
 ## Summary

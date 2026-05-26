@@ -100,9 +100,9 @@ axios.interceptors.request.use(
 ## Interceptor execution order
 
 ::: warning Request and response interceptors run in **opposite** orders
-Request interceptors are executed in **reverse order** (LIFO — last in, first out). The _last_ request interceptor added is executed _first_.
+Request interceptors are executed in **reverse order** (LIFO - last in, first out). The _last_ request interceptor added is executed _first_.
 
-Response interceptors are executed in the **order they were added** (FIFO — first in, first out). The _first_ response interceptor added is executed _first_.
+Response interceptors are executed in the **order they were added** (FIFO - first in, first out). The _first_ response interceptor added is executed _first_.
 :::
 
 The following example shows the full execution order for three request interceptors and three response interceptors:

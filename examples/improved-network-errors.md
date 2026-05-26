@@ -19,7 +19,7 @@ Axios currently throws the same `Network Error` message for many different cases
 
 These cases all look the same to developers and users, making debugging harder.
 
---> Our Approach — Wrapper / Middleware
+--> Our Approach - Wrapper / Middleware
 
 We created a small wrapper function called `enhanceNetworkError()` that:
 

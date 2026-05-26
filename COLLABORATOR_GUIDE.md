@@ -1,6 +1,6 @@
 # Collaborator Guide
 
-As a collaborator you share in the administrative responsibility for axios. This guide covers what we expect from you and how we keep the project healthy. For the technical bar (architecture, lifecycle, security-sensitive code, conventions), see [AGENTS.md](./AGENTS.md) — it is the canonical contributor guide.
+As a collaborator you share in the administrative responsibility for axios. This guide covers what we expect from you and how we keep the project healthy. For the technical bar (architecture, lifecycle, security-sensitive code, conventions), see [AGENTS.md](./AGENTS.md) - it is the canonical contributor guide.
 
 ## Code of Conduct
 
@@ -15,7 +15,7 @@ You are expected to have read the [Code of Conduct](./CODE_OF_CONDUCT.md) and to
 
 ## Answer Questions
 
-Be helpful and patient. If a question stems from unclear docs, update the docs (and consider adding an example) rather than just answering in the thread. You are not obligated to teach JavaScript or unrelated tooling — redirect those politely.
+Be helpful and patient. If a question stems from unclear docs, update the docs (and consider adding an example) rather than just answering in the thread. You are not obligated to teach JavaScript or unrelated tooling - redirect those politely.
 
 ## Submit PRs
 
@@ -31,7 +31,7 @@ When opening a PR make sure:
 - **Security-sensitive areas:** changes touching URL construction, redirects, proxy/env handling, XSRF, socket paths, decompression limits, prototype walking, or adapters get extra scrutiny and focused regression tests. Consult [THREATMODEL.md](./THREATMODEL.md).
 - **Deprecations:** removed functionality is properly deprecated with a warning first.
 - **API shape:** new public surface is predictable, consistent with existing options, and documented.
-- **Commit title:** PRs use [Conventional Commits](https://www.conventionalcommits.org/) (`fix:`, `feat:`, `chore:`, `docs:`, etc.) — release tooling depends on this.
+- **Commit title:** PRs use [Conventional Commits](https://www.conventionalcommits.org/) (`fix:`, `feat:`, `chore:`, `docs:`, etc.) - release tooling depends on this.
 - **Semver impact:** call out whether this is a patch, minor, or breaking change, and target the right branch (`v1.x` for the current maintenance line; breaking work goes elsewhere).
 
 At least one maintainer must review and approve the PR before it can be merged. If you are unsure about the impact of a change, ask for a second opinion. If you are making a breaking change, make sure to call it out in the PR description and target the appropriate branch. If you are fixing a bug, make sure to include a test that reproduces the issue and verifies the fix.
@@ -47,7 +47,7 @@ If someone reports a suspected vulnerability in a public issue, do not discuss s
 
 ## What Collaborators Should Not Do
 
-- Add runtime dependencies unilaterally — the dependency surface is intentionally tiny.
+- Add runtime dependencies unilaterally - the dependency surface is intentionally tiny.
 - Disable `ignore-scripts` in `.npmrc` or otherwise weaken install-time safety.
 - Weaken `beforeRedirect`, proxy, `socketPath`, XSRF, or prototype-pollution safeguards without tests covering the regression cases.
 
